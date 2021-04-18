@@ -1,5 +1,6 @@
 const loader = document.querySelector('.loader');
 const main = document.querySelector('.main');
+const body = document.querySelector('.body');
 
 function init() {
     setTimeout(() => {
@@ -9,6 +10,8 @@ function init() {
         loader.style.display = 'none';
 
         main.style.display = 'block';
+
+        body.style.height = '0';
 
         setTimeout(() => {
             main.style.opacity = '1';
